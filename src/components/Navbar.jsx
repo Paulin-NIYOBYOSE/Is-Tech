@@ -108,8 +108,8 @@ const Navbar = ({ setShowCart }) => {
                             <CiSearch />
                         </div>
                     </div>
-                    <div className="flex  gap-5 md:ml-20 right-0 sm:gap-4 md:gap-8 items">
-                        <div className="md:flex gap-3 hidden cursor-pointer "
+                    <div className="flex items-center gap-5 ml-auto sm:ml-0 md:ml-20 sm:gap-4 md:gap-8">
+                        <div className="md:flex gap-3 hidden cursor-pointer"
                             onClick={openModal}
                         >
                             <Modal

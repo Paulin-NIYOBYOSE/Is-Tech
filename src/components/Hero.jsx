@@ -5,7 +5,7 @@ const Hero = () => {
                 <div className="mt-10 ml-10">
                     <h1 className="text-4xl font-bold">IS Technologies Ltd</h1>
                     <p className="mt-2">We are the best in electronic collection.</p>
-                    <h2 className="text-5xl font-bold mt-8">Explore the Best Electronics</h2>
+                    <h2 className="text-4xl font-bold mt-8">Explore the Best Electronics</h2>
                     <p className="mt-3">Exclusive offer -<span className="text-red-600">10%</span> off this week</p>
                     <button className="bg-gray-500 rounded-md mt-6 hover:bg-gray-600 text-white py-3 px-6">
                         Shop Now

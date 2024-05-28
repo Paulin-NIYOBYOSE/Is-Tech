@@ -12,7 +12,6 @@ import { AiOutlineUser } from "react-icons/ai";
 import { TbPasswordUser } from "react-icons/tb";
 import { IoEyeOff } from "react-icons/io5";
 import { IoEye } from "react-icons/io5";
-import { products } from './TrendingProducts';
 Modal.setAppElement('#root')
 
 const Navbar = ({ setShowCart }) => {
@@ -64,7 +63,7 @@ const Navbar = ({ setShowCart }) => {
         setSearchResults([]);
     };
     return (
-        <div className="bg-white h-[100px] sticky sans md:px-[50px] pt-2 overflow-hidden px-[10px]  ">
+        <div className="bg-white w-full h-[100px] fixed z-20 sans md:px-[50px] pt-2 overflow-hidden px-[10px]  ">
             <div className="">
                 <div className="flex sm:gap-16 items-center">
                     <a href="">
@@ -109,7 +108,7 @@ const Navbar = ({ setShowCart }) => {
                             <CiSearch />
                         </div>
                     </div>
-                    <div className="flex absolute gap-5 mr-10 right-0 sm:gap-4 md:gap-8 items">
+                    <div className="flex  gap-5 md:ml-20 right-0 sm:gap-4 md:gap-8 items">
                         <div className="md:flex gap-3 hidden cursor-pointer "
                             onClick={openModal}
                         >

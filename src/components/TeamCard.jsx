@@ -6,7 +6,7 @@ import { FaInstagramSquare } from "react-icons/fa";
 const TeamCard = ({ img, name, role }) => {
     return (
         <>
-            <div className='flex flex-col h-[400px] w-full items-center justify-center bg-white rounded-lg '>
+            <div className='flex flex-col h-[400px] w-full items-center justify-center bg-white rounded-lg p-5 '>
                 <div className='rounded-full'><img className='w-[150px] h-[150px] rounded-full' src={`/images/${img}`} /></div>
                 <h2 className='md:text-xl text-xl font-bold '>{name}</h2>
                 <h5 className='font-semibold md:text-xl text-lg'>{role}</h5>

@@ -1,6 +1,6 @@
 const Hero = () => {
     return (
-        <div className="sans text-3xl text-green-900 mt-4 bg-green-100 overflow-hidden  p-8">
+        <div className="sans text-3xl text-green-900 mt-4 bg-green-100 overflow-hidden  md:p-8">
             <div className="flex justify-between items-center flex-wrap">
                 <div className="mt-10 ml-10">
                     <h1 className="text-4xl font-bold">IS Technologies Ltd</h1>

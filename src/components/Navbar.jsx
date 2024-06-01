@@ -108,7 +108,7 @@ const Navbar = ({ setShowCart }) => {
                             <CiSearch />
                         </div>
                     </div>
-                    <div className="flex items-center gap-5 ml-auto sm:ml-0 md:ml-20 sm:gap-4 md:gap-8">
+                    <div className="flex items-center justify-end gap-5 ml-auto sm:ml-0 md:right-0 sm:gap-4 md:gap-8">
                         <div className="md:flex gap-3 hidden cursor-pointer"
                             onClick={openModal}
                         >
@@ -212,7 +212,7 @@ const Navbar = ({ setShowCart }) => {
                             </div>
                         </div>
                         {showMenu && <Navmenu />}
-                        <button onClick={toggleMenu} className="text-black focus:outline-none lg:hidden">
+                        <button onClick={toggleMenu} className="text-black focus:outline-none md:hidden">
                             <IoMdMenu className="h-10 w-10" />
                         </button>
 

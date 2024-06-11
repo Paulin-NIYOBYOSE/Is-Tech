@@ -165,8 +165,8 @@ const Navbar = ({ setShowCart }) => {
                                                 {/* Toggle button with eye icons */}
                                             </button>
                                         </div>
-                                        <div className='flex items-center justify-center mt-2'> <input type="submit" className='border-none rounded-lg  text-white h-10 w-32 bg-black' value={"Log in"} /></div>
-                                        <div class="border-2  border-gray-200 rounded-lg h-10 w-100 mt-2 flex items-center justify-center">
+                                        <div className='flex items-center justify-center mt-2'> <input type="submit" className='border-none rounded-lg  text-white h-10 w-32 bg-black cursor-pointer' value={"Log in"} /></div>
+                                        <div class="border-2 cursor-pointer border-gray-200 rounded-lg h-10 w-100 mt-2 flex items-center justify-center">
                                             <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100"
                                                 class="h-5 w-5 mr-10" viewBox="0 0 48 48">
                                                 <path fill="#FFC107"
@@ -185,7 +185,7 @@ const Navbar = ({ setShowCart }) => {
                                             Sign
                                             in with google
                                         </div>
-                                        <h3 className='ml-20'>Don't have an account?<a href="" className='text-blue-500'>Signup</a></h3>
+                                        <h3 className='ml-20 cursor-pointer'>Don't have an account?<a href="" className='text-blue-500'>Signup</a></h3>
                                     </form>
                                 </div>
                             </Modal>

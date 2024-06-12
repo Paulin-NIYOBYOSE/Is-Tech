@@ -63,7 +63,7 @@ const Navbar = ({ setShowCart }) => {
         setSearchResults([]);
     };
     return (
-        <div className="bg-white w-full h-[100px] fixed z-20 sans md:px-[50px] pt-2 overflow-hidden px-[10px]  ">
+        <div className="bg-white w-full h-[80px] fixed z-20 sans md:px-[50px] pt-2 overflow-hidden px-[10px] backdrop-blur-sm bg-opacity-70">
             <div className="">
                 <div className="flex sm:gap-16 items-center">
                     <a href="">
@@ -72,15 +72,15 @@ const Navbar = ({ setShowCart }) => {
                             {/* <Modal /> */}
                         </div>
                     </a>
-                    <ul className="hidden md:flex gap-3 mt-7">
+                    <ul className="hidden md:flex gap-3 mt-3">
                         <li className='mb-4 pb-2 font-bold text-green-700 cursor-pointer'>Home</li>
-                        <li className='mb-4 pb-2  font-semibold hover:text-green-700  cursor-pointer'>About</li>
-                        <li className='mb-4 pb-2 font-semibold hover:text-green-700 duration-700 cursor-pointer'>Contacts</li>
+                        <li className='mb-4 pb-2  font-bold hover:text-green-700  cursor-pointer'>About</li>
+                        <li className='mb-4 pb-2 font-bold hover:text-green-700 duration-700 cursor-pointer'>Contacts</li>
                     </ul>
                     <div className="lg:flex hidden max-w-[500px]">
                         <div >
                             <input
-                                className="border-2 border-gray-500 px-6 py-2 w-full rounded-l-lg focus:outline-none"
+                                className="border-2 mb-5 border-gray-500 px-6 py-2 w-full rounded-l-lg focus:outline-none"
                                 type="text"
                                 placeholder="Search for products..."
                                 value={searchTerm}
@@ -104,11 +104,11 @@ const Navbar = ({ setShowCart }) => {
                             type="text"
                             placeholder="Search for products..."
                         /> */}
-                        <div className="bg-gray-500 text-white text-[26px] grid place-items-center px-4 rounded-r-lg">
+                        <div className="bg-gray-500 mb-5 text-white text-[26px] grid place-items-center px-4 rounded-r-lg">
                             <CiSearch />
                         </div>
                     </div>
-                    <div className="flex items-center justify-end gap-5 ml-auto sm:ml-0 md:right-0 sm:gap-4 md:gap-8">
+                    <div className="flex lg:mb-5  items-center justify-end gap-5 md:ml-5 sm:ml-0 md:right-0 sm:gap-4 md:gap-8">
                         <div className="md:flex gap-3 hidden cursor-pointer"
                             onClick={openModal}
                         >
@@ -220,11 +220,11 @@ const Navbar = ({ setShowCart }) => {
                 </div>
                 <div className="sm:hidden flex ">
                     <input
-                        className="border-[1px] pl-5 border-gray-500 h-10 w-full rounded-l-lg"
+                        className="border-[1px] pl-5 border-gray-500 h-8 w-full rounded-l-lg "
                         type="text"
                         placeholder="Search for products..."
                     />
-                    <div className="bg-gray-500 text-white w-10  grid place-items-center rounded-r-lg">
+                    <div className="bg-gray-500 text-white   grid place-items-center rounded-r-lg">
                         <CiSearch />
                     </div>
                 </div>

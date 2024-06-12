@@ -64,7 +64,7 @@ const products = [
 
 const TrendingProducts = () => {
     return (
-        <div className="container mt-32 md:px-[100px]">
+        <div className="container mt-10 md:px-[100px]">
             <div className="sm:flex justify-between items-center">
                 <h2 className="md:text-4xl text-2xl font-medium">Trending Products</h2>
                 <div className="text-gray-500 flex gap-4 text-xl mt-4 sm:mt-0">

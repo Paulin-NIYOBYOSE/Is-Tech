@@ -81,7 +81,7 @@ const NewArrival = () => {
     };
 
     return (
-        <div className="container mt-32 relative md:px-[100px]">
+        <div className="container mt-10 relative md:px-[100px]">
 
 
 

@@ -9,7 +9,7 @@ const Hero = () => {
                         <p className="mt-2">We are the best electronic collection.</p>
                         <h2 className="md:text-3xl text-2xl font-bold mt-8">Explore the Best Electronics</h2>
                         <p className="mt-3">Exclusive offer -<span className="text-red-600">10%</span> off this week</p>
-                        <button className="bg-gray-500 rounded-md mt-6 h-10 w-24 hover:bg-gray-600 text-sm text-white md:py-3 md:px-6">
+                        <button className="bg-gray-500 rounded-md mt-6 h-10 w-24 hover:bg-gray-600 text-sm text-white">
                             Shop Now
                         </button>
                     </div>

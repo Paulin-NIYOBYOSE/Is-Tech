@@ -85,7 +85,7 @@ const NewArrival = () => {
     };
 
     return (
-        <div className="sans p-4 pt-1 mt-32 relative bg-gray-200 md:px-[100px]">
+        <div className="sans p-4 pt-1 mt-5 relative bg-gray-200 md:px-[100px]">
             <div className="mt-8 relative">
                 <div className="sans font-semibold md:font-bold text-xl">
                     <h2>Browse by category</h2>

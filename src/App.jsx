@@ -11,7 +11,10 @@ import Cart from "./components/Cart";
 import Category from "./components/Category";
 import Footer from "./components/Footer";
 import Team from "./components/Team";
+
+
 // import Banner from "./components/Banner"
+
 
 
 const App = () => {

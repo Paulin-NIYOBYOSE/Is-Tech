@@ -64,32 +64,33 @@ const products = [
 
 const TrendingProducts = () => {
     return (
-        <div className="container mt-10 md:px-[100px]">
-            <div className="sm:flex justify-between items-center">
-                <h2 className="md:text-4xl text-2xl font-medium">Trending Products</h2>
-                <div className="text-gray-500 flex gap-4 text-xl mt-4 sm:mt-0">
-                    <div className="cursor-pointer text-black">New</div>
-                    <div className="cursor-pointer">Featured</div>
-                    <div className="cursor-pointer">Top Sellers</div>
+        <>
+            <div className="container mt-10 md:px-[100px]">
+                <div className="sm:flex justify-between items-center">
+                    <h2 className="md:text-4xl text-2xl font-medium">Trending Products</h2>
+                    <div className="text-gray-500 flex gap-4 text-xl mt-4 sm:mt-0">
+                        <div className="cursor-pointer text-black">New</div>
+                        <div className="cursor-pointer">Featured</div>
+                        <div className="cursor-pointer">Top Sellers</div>
+                    </div>
                 </div>
-            </div>
 
-            <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mt-8">
-                {
-                    products.map((item) => (
-                        <ProductCard
-                            key={item.id}
-                            id={item.id}
-                            img={item.img}
-                            category={item.category}
-                            title={item.title}
-                            price={item.price}
-                        />
-                    ))
-                }
+                <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mt-8">
+                    {
+                        products.map((item) => (
+                            <ProductCard
+                                key={item.id}
+                                id={item.id}
+                                img={item.img}
+                                category={item.category}
+                                title={item.title}
+                                price={item.price}
+                            />
+                        ))
+                    }
 
-            </div>
-        </div>
+                </div>
+            </div></>
     );
 }
 export default TrendingProducts;

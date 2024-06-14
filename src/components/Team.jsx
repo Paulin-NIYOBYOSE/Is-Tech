@@ -73,28 +73,30 @@ const Team = () => {
     };
 
     return (
-        <div className="sans p-4 pt-1  relative bg-gray-200 md:h-[500px] overflow-hidden">
-            <div className=" h-full">
-                <div className="sans font-semibold md:font-bold text-2xl flex items-center justify-center">
-                    <h2>Meet Our team</h2>
+        <>
+            <div className="sans p-4 pt-1  relative bg-gray-200 md:h-[500px] overflow-hidden">
+                <div className=" h-full">
+                    <div className="sans font-semibold md:font-bold text-2xl flex items-center justify-center">
+                        <h2>Meet Our team</h2>
+                    </div>
+                    <div className="flex  justify-end">
+                        <button className="h-10 w-10 bg-white text-black font-bold hover:bg-green-500 rounded-full text-xl hover:text-white" onClick={goToPrevSlide}>&lt;</button>
+                        <button className="h-10 w-10 bg-white text-black font-bold hover:bg-green-500 rounded-full text-xl hover:text-white" onClick={goToNextSlide}>&gt;</button>
+                    </div>
+                    <Slider {...settings} className="custom-slider" ref={sliderRef}>
+                        {team.map((item) => (
+                            <div key={item.id} className="custom-slide -10  sm:px-10 px-[5px]">
+                                <TeamCard
+                                    img={item.img}
+                                    name={item.name}
+                                    role={item.role}
+                                />
+                            </div>
+                        ))}
+                    </Slider>
                 </div>
-                <div className="flex  justify-end">
-                    <button className="h-10 w-10 bg-white text-black font-bold hover:bg-green-500 rounded-full text-xl hover:text-white" onClick={goToPrevSlide}>&lt;</button>
-                    <button className="h-10 w-10 bg-white text-black font-bold hover:bg-green-500 rounded-full text-xl hover:text-white" onClick={goToNextSlide}>&gt;</button>
-                </div>
-                <Slider {...settings} className="custom-slider" ref={sliderRef}>
-                    {team.map((item) => (
-                        <div key={item.id} className="custom-slide -10  sm:px-10 px-[5px]">
-                            <TeamCard
-                                img={item.img}
-                                name={item.name}
-                                role={item.role}
-                            />
-                        </div>
-                    ))}
-                </Slider>
             </div>
-        </div>
+        </>
     );
 };
 

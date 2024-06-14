@@ -81,33 +81,35 @@ const NewArrival = () => {
     };
 
     return (
-        <div className="container mt-10 relative md:px-[100px]">
+        <>
+            <div className="container mt-10 relative md:px-[100px]">
 
 
 
-            <div className="mt-8 relative">
-                <div className="sans font-bold text-xl">
-                    <h2>New Arrivals</h2>
+                <div className="mt-8 relative">
+                    <div className="sans font-bold text-xl">
+                        <h2>New Arrivals</h2>
+                    </div>
+                    <div className="flex  justify-end">
+                        <button className="h-10 w-10 bg-white text-black font-bold hover:bg-green-500 rounded-full text-xl hover:text-white" onClick={goToPrevSlide}>&lt;</button>
+                        <button className="h-10 w-10 bg-white text-black font-bold hover:bg-green-500 rounded-full text-xl hover:text-white" onClick={goToNextSlide}>&gt;</button>
+                    </div>
+                    <Slider {...settings} className="custom-slider" ref={sliderRef}>
+                        {products.map((item) => (
+                            <div key={item.id} className="custom-slide">
+                                <NewArrivalsCard
+                                    id={item.id}
+                                    img={item.img}
+                                    category={item.category}
+                                    title={item.title}
+                                    price={item.price}
+                                />
+                            </div>
+                        ))}
+                    </Slider>
                 </div>
-                <div className="flex  justify-end">
-                    <button className="h-10 w-10 bg-white text-black font-bold hover:bg-green-500 rounded-full text-xl hover:text-white" onClick={goToPrevSlide}>&lt;</button>
-                    <button className="h-10 w-10 bg-white text-black font-bold hover:bg-green-500 rounded-full text-xl hover:text-white" onClick={goToNextSlide}>&gt;</button>
-                </div>
-                <Slider {...settings} className="custom-slider" ref={sliderRef}>
-                    {products.map((item) => (
-                        <div key={item.id} className="custom-slide">
-                            <NewArrivalsCard
-                                id={item.id}
-                                img={item.img}
-                                category={item.category}
-                                title={item.title}
-                                price={item.price}
-                            />
-                        </div>
-                    ))}
-                </Slider>
             </div>
-        </div>
+        </>
     );
 };
 

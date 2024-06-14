@@ -20,7 +20,7 @@ const Hero = () => {
 
                     <div className=" rounded-full ">
                         <a className="fixed right-0 md:right-10 z-50 top-60" href="https://wa.me/%2B250783644486?text=Hello">
-                            <div className="bg-green-500 rounded-full  w-12 h-12 mr-5 flex items-center justify-center">
+                            <div className="bg-green-500 rounded-full w-12 h-12 mr-5 flex items-center justify-center">
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
                                     aria-label="WhatsApp"

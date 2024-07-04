@@ -21,7 +21,7 @@ const App = () => {
 
   const [showCart, setShowCart] = useState(false)
   return (
-    <div>
+    <div id="root">
       <Provider store={store}>
         <Navbar setShowCart={setShowCart} />
         {showCart && <Cart setShowCart={setShowCart} />}
